@@ -13,7 +13,6 @@
   
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org/)
-  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 </div>
 
@@ -55,53 +54,6 @@ A Pling Company cria e gerencia campanhas de tráfego pago focadas em resultados
 - **ESLint** - Linting e formatação de código
 - **PostCSS** - Processamento de CSS
 - **PNPM** - Gerenciador de pacotes eficiente
-
-## 🚀 Começando
-
-### Pré-requisitos
-
-- Node.js >= 18.0.0
-- PNPM (recomendado) ou NPM
-
-### Instalação
-
-1. **Clone o repositório**
-
-   ```bash
-   git clone https://github.com/LucasBened/plig-company.git
-   cd plig-company
-   ```
-
-2. **Instale as dependências**
-
-   ```bash
-   pnpm install
-   # ou
-   npm install
-   ```
-
-3. **Execute em modo de desenvolvimento**
-
-   ```bash
-   pnpm dev
-   # ou
-   npm run dev
-   ```
-
-4. **Abra no navegador**
-   ```
-   http://localhost:5173
-   ```
-
-## 📦 Scripts Disponíveis
-
-```bash
-# Desenvolvimento
-pnpm dev          # Inicia o servidor de desenvolvimento
-pnpm build        # Cria build de produção
-pnpm preview      # Visualiza o build de produção
-pnpm lint         # Executa o linting do código
-```
 
 ## 🎨 Estrutura do Projeto
 
