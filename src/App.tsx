@@ -1,4 +1,9 @@
-import { BellRing } from "lucide-react";
+import {
+  Activity,
+  BellRing,
+  ChevronsLeftRightEllipsis,
+  NotebookPenIcon,
+} from "lucide-react";
 import { motion } from "framer-motion";
 import Header from "./components/svg/Header";
 import Bean from "./components/Bean";
@@ -10,6 +15,12 @@ import Instagram from "./components/svg/Instagram";
 import Facebook from "./components/svg/Facebook";
 import notification_image from "./assets/animated.svg";
 import Metrics from "./components/Metrics";
+import { Separator } from "@/components/ui/separator";
+import Services from "./components/Services";
+import traffic from "./assets/images/paid_traffic.svg";
+import seo from "./assets/images/seo.svg";
+import design from "./assets/images/design.svg";
+// import who from "./assets/images/who.svg";
 
 export default function App() {
   // Configurações de animação
@@ -42,7 +53,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-start px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 flex-col gap-8 sm:gap-12 lg:gap-40">
+    <div className="w-full min-h-screen flex justify-center items-start px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 flex-col gap-8 sm:gap-12 lg:gap-36">
       <Header />
       <section className="w-full flex-1 flex flex-col lg:flex-row lg:justify-between lg:items-center items-center gap-8 lg:gap-0">
         <motion.div
@@ -229,7 +240,7 @@ export default function App() {
           </div>
         </motion.div>
       </section>
-      <section className="lg:mt-12 w-full flex flex-wrap justify-around lg:justify-between items-center gap-9 sm:gap-6">
+      <section className=" w-full  flex flex-wrap justify-around lg:justify-between items-center gap-9 sm:gap-6">
         <Metrics number={100} fromNumber={0} text="Clientes atendidos" />
         <Metrics number={1000} fromNumber={0} text="Investidos" />
         <Metrics
@@ -243,6 +254,79 @@ export default function App() {
           fromNumber={0}
           text="Gerados em Lead"
           value="mil"
+        />
+      </section>
+      <section className="w-full flex flex-col items-start justify-center gap-6 lg:gap-30 min-h-screen   px-4 sm:px-0">
+        <div className="flex flex-col items-start justify-center gap-8 sm:gap-12 lg:gap-16">
+          <h2 className="font-normal text-2xl sm:text-3xl lg:text-4xl text-center sm:text-left">
+            Serviços projetados para <b>Performance</b>
+          </h2>
+          <p className="text-sm sm:text-base font-light max-w-full sm:max-w-lg text-center sm:text-left">
+            Não vendemos serviços avulsos, construímos sistemas completos de
+            aquisição de clientes. Nosso único foco é gerar crescimento
+            mensurável e lucrativo para o seu negócio.
+          </p>
+          <Separator className="max-w-full sm:max-w-80 bg-light-green" />
+        </div>
+        <Services
+          image={traffic}
+          beanText="Gestão de Tráfego Pago"
+          description="   Executamos campanhas de anúncios com um foco obsessivo em performance
+          e ROI. Cada centavo do seu orçamento é otimizado para alcançar o
+          público certo e se traduzir diretamente em leads e vendas."
+          qualities={[
+            {
+              icon: <ChevronsLeftRightEllipsis className="text-light-green" />,
+              text: "Gestão de Campanhas",
+            },
+            {
+              icon: <Activity className="text-light-green" />,
+              text: "Otimização de Lances e Orçamentos",
+            },
+            {
+              icon: <NotebookPenIcon className="text-light-green" />,
+              text: "Relatórios de Performance",
+            },
+          ]}
+        />
+        <Services
+          image={seo}
+          beanText="Otimização de SEO"
+          description="   Melhoramos a visibilidade do seu site nos motores de busca, atraindo tráfego orgânico qualificado. Nossa abordagem é baseada em dados e resultados, garantindo que seu site se destaque nas pesquisas relevantes."
+          qualities={[
+            {
+              icon: <ChevronsLeftRightEllipsis className="text-light-green" />,
+              text: "Pesquisa de Palavras-chave",
+            },
+            {
+              icon: <Activity className="text-light-green" />,
+              text: "Otimização On-Page",
+            },
+            {
+              icon: <NotebookPenIcon className="text-light-green" />,
+              text: "Análise de Concorrência",
+            },
+          ]}
+          variant="reverse"
+        />
+        <Services
+          image={design}
+          beanText="Design de Websites"
+          description="Para nós, design é uma ferramenta de performance, não apenas estética. Desenvolvemos websites e landing pages ultra-rápidos, onde cada elemento é estrategicamente posicionado para guiar o visitante, sem atritos, diretamente para a conversão."
+          qualities={[
+            {
+              icon: <ChevronsLeftRightEllipsis className="text-light-green" />,
+              text: "Desenvolvimento de Sites ",
+            },
+            {
+              icon: <Activity className="text-light-green" />,
+              text: "Otimização da Experiência do Usuário",
+            },
+            {
+              icon: <NotebookPenIcon className="text-light-green" />,
+              text: "Implementação de Tracking e Analytics",
+            },
+          ]}
         />
       </section>
     </div>
