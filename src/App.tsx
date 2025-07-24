@@ -240,7 +240,7 @@ export default function App() {
           </div>
         </motion.div>
       </section>
-      <section className=" w-full  flex flex-wrap justify-around lg:justify-between items-center gap-9 sm:gap-6">
+      <section className=" w-full  flex flex-wrap lg:mt-30 justify-around lg:justify-between items-center gap-9 sm:gap-6">
         <Metrics number={100} fromNumber={0} text="Clientes atendidos" />
         <Metrics number={1000} fromNumber={0} text="Investidos" />
         <Metrics
@@ -256,7 +256,7 @@ export default function App() {
           value="mil"
         />
       </section>
-      <section className="w-full flex flex-col items-start justify-center gap-6 lg:gap-30 min-h-screen   px-4 sm:px-0">
+      <section className="w-full flex flex-col items-start justify-center gap-6 lg:gap-30 min-h-screen lg:mt-20 px-4 sm:px-0">
         <div className="flex flex-col items-start justify-center gap-8 sm:gap-12 lg:gap-16">
           <h2 className="font-normal text-2xl sm:text-3xl lg:text-4xl text-center sm:text-left">
             Serviços projetados para <b>Performance</b>
