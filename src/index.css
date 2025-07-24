@@ -22,15 +22,15 @@ html{
   --color-light-green: #53B95E;
   --color-smooth-gray: #6E6E6E;
   --color-light-gray: #616060;
+  --color-soft-gray: #D4D4D4 ;
   --color-smooth-black: #212121;
   --color-transparent-bg: rgba(190, 235, 195, 0.20);
-
-
 
 
   /*Shadows*/
 
   --shadow-lg: 5px 5px 0px 0px #212121;
+  --shadow-xl: 8px 8px 0px 0px #212121;
 
 
 

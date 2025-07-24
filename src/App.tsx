@@ -1,14 +1,15 @@
 import { BellRing } from "lucide-react";
 import { motion } from "framer-motion";
-import Header from "./components/Header";
+import Header from "./components/svg/Header";
 import Bean from "./components/Bean";
 import { Button } from "./components/ui/button";
-import Google from "./components/Google";
-import Meta from "./components/Meta";
-import Whatsapp from "./components/Whatsapp";
-import Instagram from "./components/Instagram";
-import Facebook from "./components/Facebook";
+import Google from "./components/svg/Google";
+import Meta from "./components/svg/Meta";
+import Whatsapp from "./components/svg/Whatsapp";
+import Instagram from "./components/svg/Instagram";
+import Facebook from "./components/svg/Facebook";
 import notification_image from "./assets/animated.svg";
+import Metrics from "./components/Metrics";
 
 export default function App() {
   // Configurações de animação
@@ -228,7 +229,22 @@ export default function App() {
           </div>
         </motion.div>
       </section>
-      <section>teste</section>
+      <section className="lg:mt-12 w-full flex flex-wrap justify-around lg:justify-between items-center gap-9 sm:gap-6">
+        <Metrics number={100} fromNumber={0} text="Clientes atendidos" />
+        <Metrics number={1000} fromNumber={0} text="Investidos" />
+        <Metrics
+          number={20}
+          fromNumber={0}
+          text="Gerado em receita"
+          value="mil"
+        />
+        <Metrics
+          number={50}
+          fromNumber={0}
+          text="Gerados em Lead"
+          value="mil"
+        />
+      </section>
     </div>
   );
 }
