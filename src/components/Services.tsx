@@ -17,12 +17,10 @@ interface ServicesProps {
 
 const servicesVariants = tv({
   slots: {
-    content:
-      "flex flex-col justify-between gap-4 lg:gap-12 max-w-full lg:max-w-lg w-full lg:w-auto h-auto lg:h-full",
-    text: "max-w-full lg:max-w-3xl text-sm text-smooth-black font-light leading-7",
-    qualitiesContainer:
-      "flex flex-col h-full justify-around gap-8 sm:gap-6 lg:gap-7 w-full",
-    image: "w-full lg:w-auto flex justify-center",
+    content: "flex flex-col justify-center gap-6 w-full lg:w-1/2 h-full",
+    text: "max-w-full lg:max-w-xl text-sm lg:text-base text-smooth-black font-light leading-7",
+    qualitiesContainer: "flex flex-col h-full justify-around gap-7 w-full",
+    image: "size-150 lg:w-1/2 flex items-center",
     beanWrapper: "",
     buttonWrapper: "",
   },
@@ -72,8 +70,8 @@ export default function Services({
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.2,
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
       },
     },
   };
@@ -89,7 +87,7 @@ export default function Services({
       y: 0,
       scale: 1,
       transition: {
-        duration: 0.6,
+        duration: 0.5,
         ease: "easeOut" as const,
       },
     },
@@ -104,16 +102,16 @@ export default function Services({
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.7,
         ease: "easeOut" as const,
-        delay: 0.4,
+        delay: 0.2,
       },
     },
   };
 
   return (
     <motion.div
-      className="w-full flex flex-col lg:flex-row items-start lg:items-start justify-between gap-8 lg:gap-6 xl:gap-8 h-fit lg:min-h-[400px]"
+      className="w-full flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-8 xl:gap-12 h-fit lg:min-h-[400px] py-8 lg:py-12"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -131,27 +129,15 @@ export default function Services({
           className={qualitiesContainer()}
           variants={containerVariants}
         >
-          <motion.div variants={itemVariants}>
-            <Quality
-              icon={qualities[0].icon}
-              text={qualities[0].text}
-              variant={variant}
-            />
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <Quality
-              icon={qualities[1].icon}
-              text={qualities[1].text}
-              variant={variant}
-            />
-          </motion.div>
-          <motion.div variants={itemVariants}>
-            <Quality
-              icon={qualities[2].icon}
-              text={qualities[2].text}
-              variant={variant}
-            />
-          </motion.div>
+          {qualities.map((quality, index) => (
+            <motion.div key={index} variants={itemVariants}>
+              <Quality
+                icon={quality.icon}
+                text={quality.text}
+                variant={variant}
+              />
+            </motion.div>
+          ))}
         </motion.div>
 
         <motion.div variants={itemVariants} className={buttonWrapper()}>
@@ -170,8 +156,9 @@ export default function Services({
       >
         <img
           src={image}
-          alt="Tráfego Pago"
-          className="w-full max-w-md lg:max-w-none lg:w-auto h-auto"
+          alt={`Ilustração para o serviço de ${beanText}`}
+          className="w-full h-auto max-w-full"
+          loading="lazy"
         />
       </motion.div>
     </motion.div>

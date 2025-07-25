@@ -9,13 +9,13 @@ interface QualityProps {
 const qualityVariants = tv({
   slots: {
     container:
-      "flex items-start gap-2 text-sm font-bold border border-soft-gray shadow-xl shadow-pastel-green rounded-xl py-3.5 px-4 w-full lg:min-w-96 lg:max-w-96",
-    text: "text-sm font-semibold",
+      "flex items-center gap-3 text-sm font-bold border border-soft-gray shadow-lg shadow-pastel-green rounded-xl py-3 px-4 w-full lg:w-96",
+    text: "text-sm font-semibold w-full",
+    iconWrapper: "flex-shrink-0",
   },
   variants: {
     variant: {
       default: {
-        container: "",
         text: "text-left",
       },
       reverse: {
@@ -34,11 +34,17 @@ export default function Quality({
   text,
   variant = "default",
 }: QualityProps) {
-  const { container, text: textClass } = qualityVariants({ variant });
+  const {
+    container,
+    text: textClass,
+    iconWrapper,
+  } = qualityVariants({
+    variant,
+  });
 
   return (
     <div className={container()}>
-      {icon}
+      <div className={iconWrapper()}>{icon}</div>
       <span className={textClass()}>{text}</span>
     </div>
   );
