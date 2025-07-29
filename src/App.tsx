@@ -411,7 +411,7 @@ export default function App() {
           <Services
             image={seo}
             beanText="Otimização de SEO"
-            description="   Melhoramos a visibilidade do seu site nos motores de busca, atraindo tráfego orgânico qualificado. Nossa abordagem é baseada em dados e resultados, garantindo que seu site se destaque nas pesquisas relevantes."
+            description="Melhoramos a visibilidade do seu site nos motores de busca, atraindo tráfego orgânico qualificado. Nossa abordagem é baseada em dados e resultados, garantindo que seu site se destaque nas pesquisas relevantes."
             qualities={[
               {
                 icon: (
