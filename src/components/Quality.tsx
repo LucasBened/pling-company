@@ -2,7 +2,7 @@ import { tv } from "tailwind-variants";
 
 interface QualityProps {
   icon?: React.ReactNode;
-  text?: string;
+  text?: string | React.ReactNode;
   variant?: "default" | "reverse";
 }
 

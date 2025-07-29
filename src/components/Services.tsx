@@ -18,7 +18,7 @@ interface ServicesProps {
 const servicesVariants = tv({
   slots: {
     content: "flex flex-col justify-center gap-6 w-full lg:w-1/2 h-full",
-    text: "max-w-full lg:max-w-xl text-sm lg:text-base text-smooth-black font-light leading-7",
+    text: "max-w-full lg:max-w-xl text-base lg:text-base text-smooth-black font-light leading-7",
     qualitiesContainer: "flex flex-col h-full justify-around gap-7 w-full",
     image: "size-150 lg:w-1/2 flex items-center",
     beanWrapper: "",
@@ -141,7 +141,13 @@ export default function Services({
         </motion.div>
 
         <motion.div variants={itemVariants} className={buttonWrapper()}>
-          <Button className="px-7 py-5 shadow-xl text-smooth-black shadow-light-gray font-bold bg-pastel-green hover:bg-smooth-green transition-colors duration-300 w-full sm:w-auto">
+          <Button
+            className="bg-[#C0E6C4] text-smooth-black border border-blacktext-smooth-black rounded-2xl font-bold text-base py-4 px-8
+                         shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
+                         hover:bg-[#b1dcb4] hover:-translate-y-0.5
+                         active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
+                         transition-all duration-200 ease-out"
+          >
             Saiba mais
           </Button>
         </motion.div>

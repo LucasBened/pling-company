@@ -31,10 +31,6 @@ html{
 
   --shadow-lg: 5px 5px 0px 0px #212121;
   --shadow-xl: 8px 8px 0px 0px #212121;
-
-
-
-
 }
 
 @theme inline {
@@ -151,4 +147,23 @@ html{
   body {
     @apply bg-background text-foreground;
     }
+}
+
+/* ================================================================== */
+/* =================== NOVOS COMPONENTES DE BOTÃO =================== */
+/* ================================================================== */
+@layer components {
+  .btn-3d {
+    @apply bg-[#C0E6C4] text-[#1E1E1E] border border-[#1E1E1E] rounded-2xl font-bold text-base
+           shadow-[0px_4px_0px_0px_#1E1E1E] 
+           transition-all duration-200 ease-out
+           hover:shadow-[0px_6px_0px_0px_#1E1E1E] hover:bg-[#b1dcb4] hover:-translate-y-0.5
+           active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5;
+  }
+
+  .btn-secondary {
+     @apply bg-smooth-gray text-white font-bold rounded-lg 
+            shadow-lg shadow-smooth-black 
+            hover:bg-light-gray transition-colors duration-300 cursor-pointer;
+  }
 }
