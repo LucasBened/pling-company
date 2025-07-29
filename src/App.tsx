@@ -85,7 +85,10 @@ export default function App() {
     <div className="w-full min-h-screen flex justify-center items-center flex-col gap-8 sm:gap-12 lg:gap-24 ">
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 flex flex-col gap-8 sm:gap-12 lg:gap-45">
         <Header />
-        <section className="w-full flex-1 flex flex-col lg:flex-row lg:justify-between lg:items-center items-center gap-8 lg:gap-0">
+        <section
+          id="hero"
+          className="w-full flex-1 flex flex-col lg:flex-row lg:justify-between lg:items-center items-center gap-8 lg:gap-0"
+        >
           <motion.div
             className="w-full lg:w-1/2 h-full flex flex-col gap-6 lg:gap-8 justify-center text-center lg:text-left"
             variants={staggerContainer}
@@ -133,6 +136,11 @@ export default function App() {
                          hover:bg-[#b1dcb4] hover:-translate-y-0.5
                          active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
                          transition-all duration-200 ease-out"
+                onClick={() =>
+                  document
+                    .getElementById("contato")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Agendar Reunião
               </Button>
@@ -142,6 +150,11 @@ export default function App() {
                          hover:bg-smooth-black hover:-translate-y-0.5
                          active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
                          transition-all duration-200 ease-out"
+                onClick={() =>
+                  document
+                    .getElementById("servicos")
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }
               >
                 Nossos Serviços
               </Button>
@@ -270,13 +283,14 @@ export default function App() {
 
               <img
                 src={notification_image}
-                alt="Notificação que converte"
+                alt="Ilustração de notificação animada representando conversão de leads e resultados em tráfego pago."
                 className="max-w-full h-auto w-11/12 sm:w-5/6 md:w-4/5 lg:w-full mx-auto"
               />
             </div>
           </motion.div>
         </section>
         <motion.section
+          id="servicos"
           className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-16"
           initial="hidden"
           whileInView="visible"
@@ -353,7 +367,10 @@ export default function App() {
             />
           </motion.div>
         </motion.section>
-        <section className="w-full flex flex-col items-start justify-center gap-6 min-h-screen lg:mt-20 px-4 sm:px-0">
+        <section
+          id="para-quem"
+          className="w-full flex flex-col items-start justify-center gap-6 min-h-screen lg:mt-20 px-4 sm:px-0"
+        >
           <div className="flex flex-col items-start justify-center gap-8 sm:gap-12 lg:gap-16">
             <h2 className="font-light text-4xl sm:text-5xl text-smooth-black leading-tight text-center lg:text-left">
               Serviços projetados para{" "}
@@ -436,6 +453,7 @@ export default function App() {
           />
         </section>
         <motion.section
+          id="plataformas"
           className="w-full flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-between gap-12 lg:gap-30 mt-10 lg:mt-10 px-4 sm:px-0"
           initial="initial"
           whileInView="animate"
@@ -498,10 +516,15 @@ export default function App() {
               <motion.div variants={fadeInUp} className="w-full sm:w-auto">
                 <Button
                   className="bg-[#C0E6C4] text-smooth-black border  rounded-2xl font-bold text-base py-4 px-8
-                           shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
-                           hover:bg-[#b1dcb4] hover:-translate-y-0.5
-                           active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
-                           transition-all duration-200 ease-out"
+                         shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
+                         hover:bg-[#b1dcb4] hover:-translate-y-0.5
+                         active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
+                         transition-all duration-200 ease-out"
+                  onClick={() =>
+                    document
+                      .getElementById("contato")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
                 >
                   Agendar Reunião
                 </Button>
@@ -515,7 +538,7 @@ export default function App() {
           >
             <img
               src={who}
-              alt="Ilustração de profissionais analisando gráficos e métricas de crescimento"
+              alt="Equipe analisando gráficos e métricas de crescimento, representando performance em marketing digital."
               className="lg:max-w-full lg:h-auto hidden md:block size-150 lg:size-full"
               loading="lazy"
             />
@@ -557,10 +580,15 @@ export default function App() {
             </p>
             <Button
               className="bg-[#C0E6C4] text-smooth-black border  rounded-2xl font-bold text-base py-4 px-8
-                       shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
-                       hover:bg-[#b1dcb4] hover:-translate-y-0.5
-                       active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
-                       transition-all duration-200 ease-out"
+                         shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
+                         hover:bg-[#b1dcb4] hover:-translate-y-0.5
+                         active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
+                         transition-all duration-200 ease-out"
+              onClick={() =>
+                document
+                  .getElementById("contato")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Saiba mais
             </Button>
@@ -697,6 +725,7 @@ export default function App() {
         </motion.section>
 
         <motion.section
+          id="resultados"
           className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20 py-16 lg:py-24"
           initial="initial"
           whileInView="animate"
@@ -708,7 +737,7 @@ export default function App() {
           >
             <img
               src={resultsImage}
-              alt="Equipe de marketing impulsionando um gráfico de crescimento com uma seta"
+              alt="Equipe de marketing impulsionando gráfico de crescimento, foco em resultados reais e ROI."
               className="max-w-full h-auto rounded-lg"
             />
           </motion.div>
@@ -732,15 +761,24 @@ export default function App() {
                        hover:bg-[#b1dcb4] hover:-translate-y-0.5
                        active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
                        transition-all duration-200 ease-out"
+              onClick={() =>
+                document
+                  .getElementById("contato")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Solicitar Orçamento
             </Button>
           </motion.div>
         </motion.section>
 
-        <CaseStudySection />
+        <div id="estudo-de-caso">
+          <CaseStudySection />
+        </div>
 
-        <ContactSession />
+        <div id="contato">
+          <ContactSession />
+        </div>
       </div>
       <Footer />
     </div>

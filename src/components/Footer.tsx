@@ -35,6 +35,11 @@ const Footer = () => {
                          hover:bg-[#b1dcb4] hover:-translate-y-0.5
                          active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
                          transition-all duration-200 ease-out w-full sm:w-auto"
+              onClick={() =>
+                document
+                  .getElementById("contato")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               Agendar Reunião
             </Button>

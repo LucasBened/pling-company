@@ -19,25 +19,25 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex gap-8 xl:gap-10 items-center">
           <a
-            href="#"
+            href="#servicos"
             className="font-medium text-sm hover:text-pastel-green transition-colors duration-300"
           >
             Serviços
           </a>
           <a
-            href="#"
+            href="#plataformas"
             className="font-medium text-sm hover:text-pastel-green transition-colors duration-300"
           >
             Especialidades
           </a>
           <a
-            href="#"
+            href="#resultados"
             className="font-medium text-sm hover:text-pastel-green transition-colors duration-300"
           >
             Resultados
           </a>
           <a
-            href="#"
+            href="#contato"
             className="font-medium text-sm hover:text-pastel-green transition-colors duration-300"
           >
             Contato
@@ -46,7 +46,14 @@ export default function Header() {
 
         {/* Desktop CTA Button */}
         <div className="hidden lg:block flex-shrink-0">
-          <Button className="bg-pastel-green text-smooth-black font-bold text-sm px-4 py-2 shadow-lg hover:bg-smooth-green transition-colors duration-300 cursor-pointer whitespace-nowrap">
+          <Button
+            className="bg-pastel-green text-smooth-black font-bold text-sm px-4 py-2 shadow-lg hover:bg-smooth-green transition-colors duration-300 cursor-pointer whitespace-nowrap"
+            onClick={() => {
+              document
+                .getElementById("contato")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             Fale com um especialista
           </Button>
         </div>
@@ -70,28 +77,28 @@ export default function Header() {
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-100 z-50">
           <nav className="flex flex-col p-6 space-y-3">
             <a
-              href="#"
+              href="#servicos"
               className="font-medium text-sm py-3 hover:text-pastel-green transition-colors duration-300 border-b border-gray-50"
               onClick={() => setIsMenuOpen(false)}
             >
               Serviços
             </a>
             <a
-              href="#"
+              href="#plataformas"
               className="font-medium text-sm py-3 hover:text-pastel-green transition-colors duration-300 border-b border-gray-50"
               onClick={() => setIsMenuOpen(false)}
             >
               Especialidades
             </a>
             <a
-              href="#"
+              href="#resultados"
               className="font-medium text-sm py-3 hover:text-pastel-green transition-colors duration-300 border-b border-gray-50"
               onClick={() => setIsMenuOpen(false)}
             >
               Resultados
             </a>
             <a
-              href="#"
+              href="#contato"
               className="font-medium text-sm py-3 hover:text-pastel-green transition-colors duration-300 border-b border-gray-50"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -100,7 +107,12 @@ export default function Header() {
             <div className="pt-4 mt-2">
               <Button
                 className="w-full bg-pastel-green text-smooth-black font-bold text-sm py-3 hover:bg-smooth-green transition-colors duration-300 cursor-pointer"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  document
+                    .getElementById("contato")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
               >
                 Fale com um especialista
               </Button>

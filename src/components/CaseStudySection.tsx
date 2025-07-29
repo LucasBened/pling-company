@@ -66,7 +66,11 @@ const CaseStudySection = () => {
             className="bg-white rounded-3xl border border-[#E0E0E0] p-6 flex flex-col items-center text-center gap-5
                        transition-all duration-300 ease-out hover:border-[#1E1E1E] hover:-translate-y-2 hover:shadow-xl"
           >
-            <img src={study.img} alt={study.title} className="w-24 h-24" />
+            <img
+              src={study.img}
+              alt={study.title + " - " + study.description}
+              className="w-24 h-24"
+            />
             <div className="flex flex-col gap-2">
               <h3 className="font-bold text-lg text-smooth-black leading-tight">
                 {study.title}
