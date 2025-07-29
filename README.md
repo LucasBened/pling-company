@@ -136,7 +136,7 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 **Lucas Benedito**
 
 - GitHub: [@LucasBened](https://github.com/LucasBened)
-- LinkedIn: [Lucas Benedito](https://www.linkedin.com/in/lucas-benedito)
+- LinkedIn: [Lucas da Silva](https://www.linkedin.com/in/lucasbened)
 
 ## 🏢 Cliente
 
