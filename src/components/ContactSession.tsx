@@ -14,6 +14,9 @@ const Logo = () => (
   />
 );
 
+const portalId = import.meta.env.VITE_PORTAL_ID;
+const formId = import.meta.env.VITE_FORM_ID;
+
 const formSchema = z.object({
   firstname: z.string().min(2, "O nome é obrigatório."),
   phone: z.string().min(10, "O número de telefone é obrigatório."),
@@ -49,8 +52,6 @@ const ContactSession = () => {
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     setSubmissionStatus("idle");
 
-    const portalId = "50314747";
-    const formId = "33ce0db4-35fd-4386-b3bb-10ad4a5f132d";
     const url = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`;
 
     const fields = Object.entries(data).map(([name, value]) => ({
