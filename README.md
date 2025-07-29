@@ -36,7 +36,6 @@ A Pling Company cria e gerencia campanhas de tráfego pago focadas em resultados
 - 🎨 **UI Moderna** - Interface limpa e profissional
 - ⚡ **Performance Otimizada** - Construído com Vite
 - 🌐 **SEO Friendly** - Estrutura semântica otimizada
-- 🎪 **Efeitos Visuais** - Glassmorphism e micro-interações
 
 ## 🆕 Funcionalidades 
 
