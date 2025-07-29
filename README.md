@@ -101,25 +101,6 @@ O formulário de contato foi totalmente refeito para garantir:
 - Campos obrigatórios e opcionais bem definidos
 - Experiência mobile-first
 
-## 🎨 Estrutura do Projeto
-
-```
-src/
-├── assets/           # Imagens, SVGs e outros recursos
-│   ├── images/       # Imagens do projeto
-│   ├── logo_full.svg # Logo da empresa
-│   └── animated.svg  # Ilustração principal
-├── components/       # Componentes React
-│   ├── ui/          # Componentes de UI reutilizáveis
-│   ├── Header.tsx   # Cabeçalho responsivo
-│   ├── Bean.tsx     # Componente de badge
-│   └── [Social].tsx # Ícones das redes sociais
-├── lib/             # Utilitários e configurações
-│   └── utils.ts     # Funções utilitárias
-├── App.tsx          # Componente principal
-└── main.tsx         # Ponto de entrada da aplicação
-```
-
 ## 🎭 Animações Implementadas
 
 ### Framer Motion Features
