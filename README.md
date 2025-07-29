@@ -38,6 +38,34 @@ A Pling Company cria e gerencia campanhas de tráfego pago focadas em resultados
 - 🌐 **SEO Friendly** - Estrutura semântica otimizada
 - 🎪 **Efeitos Visuais** - Glassmorphism e micro-interações
 
+## 🆕 Funcionalidades e Melhorias Recentes
+
+### 🌐 SEO Avançado
+
+- **Meta Tags Otimizadas:** Meta tags completas para SEO, Open Graph e Twitter Cards, melhorando indexação e compartilhamento.
+- **Estrutura Semântica:** Uso de tags semânticas (`<main>`, `<header>`, `<footer>`) e atributos ARIA para acessibilidade e SEO.
+- **Imagens com `alt` descritivo:** Todas as imagens possuem textos alternativos otimizados para buscadores.
+- **URL Canônica:** Implementação de `<link rel="canonical">` para evitar conteúdo duplicado.
+
+### 📬 Formulário de Contato Moderno
+
+- **Validação com Zod e React Hook Form:** Formulário utiliza `react-hook-form` para gerenciamento de estado e `zod` para validação robusta dos campos.
+- **Mensagens de erro customizadas:** Feedback claro e amigável para cada campo inválido.
+- **Envio via API HubSpot:** Integração direta com HubSpot para captação de leads, com tratamento de sucesso/erro e reset automático do formulário.
+- **Acessibilidade:** Labels, estados de erro e navegação por teclado otimizados.
+- **Estilização personalizada:** CSS avançado para inputs, selects, botões e mensagens, garantindo visual consistente e responsivo.
+
+### 🖥️ Novos Componentes e UI
+
+- **Botões 3D e micro-interações:** Novos estilos de botão e efeitos visuais para aumentar engajamento.
+- **Separadores e badges customizados:** Componentes reutilizáveis para destacar informações importantes.
+- **Animações Framer Motion:** Novos efeitos de entrada, shake, stagger e reveal em seções e elementos-chave.
+
+### 📊 Metodologia e Transparência
+
+- **Foco em Resultados Reais:** Métricas e seções que destacam performance, ROI e crescimento, com explicações claras para o cliente.
+- **Relatórios e Tracking:** Implementação de tracking e analytics para acompanhamento de campanhas.
+
 ## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
@@ -47,6 +75,7 @@ A Pling Company cria e gerencia campanhas de tráfego pago focadas em resultados
 - **Tailwind CSS** - Framework CSS utilitário para estilização rápida
 - **Framer Motion** - Biblioteca de animações para React
 - **Lucide React** - Ícones SVG otimizados
+- **React Hook Form** e **Zod** - Formulários reativos e validação robusta
 
 ### Ferramentas de Desenvolvimento
 
@@ -54,6 +83,24 @@ A Pling Company cria e gerencia campanhas de tráfego pago focadas em resultados
 - **ESLint** - Linting e formatação de código
 - **PostCSS** - Processamento de CSS
 - **PNPM** - Gerenciador de pacotes eficiente
+- **HubSpot API** - Integração de leads
+- **Tailwind Merge/Variants** - Composição de estilos avançados
+
+## 📈 SEO & Performance
+
+- **Lighthouse Score:** Estrutura pensada para alta performance e pontuação máxima em SEO, acessibilidade e melhores práticas.
+- **Lazy Loading de imagens:** Carregamento otimizado para imagens grandes.
+- **Breakpoints e tipografia responsiva:** Experiência perfeita em qualquer dispositivo.
+
+## 📬 Formulário de Contato
+
+O formulário de contato foi totalmente refeito para garantir:
+
+- Validação instantânea e amigável
+- Integração direta com HubSpot
+- Mensagens de sucesso/erro claras
+- Campos obrigatórios e opcionais bem definidos
+- Experiência mobile-first
 
 ## 🎨 Estrutura do Projeto
 
