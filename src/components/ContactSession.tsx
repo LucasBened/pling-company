@@ -332,7 +332,11 @@ const ContactSession = () => {
 
             <Button
               type="submit"
-              className="w-full btn-3d"
+              className="bg-[#C0E6C4] text-smooth-black border  rounded-2xl font-bold text-base py-4 px-8
+                       shadow-[0px_4px_0px_0px_#1E1E1E] hover:shadow-[0px_6px_0px_0px_#1E1E1E]
+                       hover:bg-[#b1dcb4] hover:-translate-y-0.5
+                       active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
+                       transition-all duration-200 ease-out w-full "
               disabled={isSubmitting} // O botão é desabilitado pelo RHF
             >
               {isSubmitting ? "Enviando..." : "Enviar"}
