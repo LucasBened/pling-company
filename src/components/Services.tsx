@@ -20,7 +20,7 @@ const servicesVariants = tv({
     content: "flex flex-col justify-center gap-6 w-full lg:w-1/2 h-full",
     text: "max-w-full lg:max-w-xl text-base lg:text-base text-smooth-black font-light leading-7",
     qualitiesContainer: "flex flex-col h-full justify-around gap-7 w-full",
-    image: "size-150 lg:w-1/2 flex items-center",
+    image: "size-100 lg:w-1/2 flex items-center",
     beanWrapper: "",
     buttonWrapper: "",
   },
