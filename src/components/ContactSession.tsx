@@ -3,15 +3,12 @@ import { motion } from "framer-motion";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import logo from "../assets/logo.svg";
 
 import { Button } from "./ui/button";
 
 const Logo = () => (
-  <img
-    src="/src/assets/logo.svg"
-    alt="Pling Company Logo"
-    className="w-20 h-auto"
-  />
+  <img src={logo} alt="Pling Company Logo" className="w-20 h-auto" />
 );
 
 const portalId = import.meta.env.VITE_PORTAL_ID;

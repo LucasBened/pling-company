@@ -62,7 +62,7 @@ const Footer = () => {
         <Separator className="bg-smooth-gray my-12" />
 
         <div className="flex flex-col-reverse sm:flex-row justify-between items-center gap-8">
-          <p className="text-sm text-smooth-gray font-light">
+          <p className="text-sm text-smooth-gray font-light ">
             © {year} Pling Company. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
