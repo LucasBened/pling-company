@@ -2,10 +2,10 @@ import {
   Activity,
   BellRing,
   BrainCircuit,
-  BuildingIcon,
   ChevronsLeftRightEllipsis,
   FolderCode,
   Handshake,
+  House,
   MessageSquare,
   NotebookPenIcon,
   Search,
@@ -491,14 +491,14 @@ export default function App() {
             >
               <motion.div variants={fadeInUp}>
                 <Quality
-                  text="Para Varejistas Digitais (E-commerce)"
-                  icon={<BuildingIcon className="text-light-green" />}
-                />
-              </motion.div>
-              <motion.div variants={fadeInUp}>
-                <Quality
                   text="Para Fundadores de SaaS"
                   icon={<FolderCode className="text-light-green" />}
+                />
+              </motion.div>{" "}
+              <motion.div variants={fadeInUp}>
+                <Quality
+                  text="Para Empresas Locais"
+                  icon={<House className="text-light-green" />}
                 />
               </motion.div>
               <motion.div variants={fadeInUp}>
@@ -539,7 +539,7 @@ export default function App() {
             <img
               src={who}
               alt="Equipe analisando gráficos e métricas de crescimento, representando performance em marketing digital."
-              className="lg:max-w-full lg:h-auto hidden md:block size-150 lg:size-full"
+              className="lg:max-w-full lg:h-auto hidden md:block size-150 lg:size-full "
               loading="lazy"
             />
           </motion.div>
