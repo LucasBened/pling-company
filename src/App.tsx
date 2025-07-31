@@ -82,7 +82,7 @@ export default function App() {
   };
 
   return (
-    <div className="w-full min-h-screen flex justify-center items-center flex-col gap-8 sm:gap-12 lg:gap-24 ">
+    <main className="w-full min-h-screen flex justify-center items-center flex-col gap-8 sm:gap-12 lg:gap-24 ">
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64 flex flex-col gap-8 sm:gap-12 lg:gap-45">
         <Header />
         <section
@@ -110,14 +110,14 @@ export default function App() {
             </motion.div>
 
             <motion.h1
-              className="font-black text-4xl sm:text-5xl text-smooth-black leading-tight lg:text-left"
+              className="font-black text-4xl sm:text-5xl lg:text-4xl 2xl:text-5xl text-smooth-black leading-tight lg:text-left"
               variants={fadeInUp}
             >
               Potencialize seu Crescimento.
             </motion.h1>
 
             <motion.p
-              className="text-base lg:text-lg font-light text-smooth-black leading-relaxed lg:text-left w-full lg:w-3/4"
+              className="text-sm sm:text-base lg:text-base 2xl:text-lg font-light text-smooth-black leading-relaxed lg:text-left w-full lg:w-3/4"
               variants={fadeInUp}
             >
               Na Pling Company, criamos e gerenciamos campanhas de tráfego pago
@@ -781,6 +781,6 @@ export default function App() {
         </div>
       </div>
       <Footer />
-    </div>
+    </main>
   );
 }
