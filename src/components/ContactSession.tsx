@@ -132,7 +132,6 @@ const ContactSession = () => {
           </p>
         </motion.div>
         <motion.div className="w-full lg:w-6/12" variants={fadeInUp}>
-          {/* 5. O form agora usa o handleSubmit do React Hook Form */}
           <form
             onSubmit={handleSubmit(onSubmit)}
             className="w-full space-y-4 bg-white p-8 rounded-2xl border border-[#1E1E1E] shadow-[0px_6px_0px_0px_#1E1E1E]"
@@ -148,7 +147,7 @@ const ContactSession = () => {
                 <input
                   type="text"
                   id="firstname"
-                  {...register("firstname")} // Conectado ao RHF
+                  {...register("firstname")}
                   className="w-full p-3 border border-[#1E1E1E] rounded-xl shadow-[0px_3px_0px_0px_#1E1E1E] focus:ring-[#C0E6C4] focus:border-[#C0E6C4] transition"
                 />
                 {errors.firstname && (
@@ -335,7 +334,7 @@ const ContactSession = () => {
                        hover:bg-[#b1dcb4] hover:-translate-y-0.5
                        active:shadow-[0px_2px_0px_0px_#1E1E1E] active:translate-y-0.5
                        transition-all duration-200 ease-out w-full "
-              disabled={isSubmitting} // O botão é desabilitado pelo RHF
+              disabled={isSubmitting}
             >
               {isSubmitting ? "Enviando..." : "Enviar"}
             </Button>
