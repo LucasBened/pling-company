@@ -1,6 +1,5 @@
 import { Button } from "./ui/button";
 import Instagram from "./svg/Instagram";
-import Facebook from "./svg/Facebook";
 import LinkedIn from "./svg/Linkedin";
 import { Separator } from "./ui/separator";
 
@@ -66,13 +65,18 @@ const Footer = () => {
             © {year} Pling Company. Todos os direitos reservados.
           </p>
           <div className="flex items-center gap-4">
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/rnysolucoes/"
+              aria-label="Instagram"
+              target="_blank"
+            >
               <Instagram className="w-6 h-6 text-smooth-gray hover:text-white transition-colors" />
             </a>
-            <a href="#" aria-label="Facebook">
-              <Facebook className="w-6 h-6 text-smooth-gray hover:text-white transition-colors" />
-            </a>
-            <a href="#" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/company/rny-solu%C3%A7%C3%B5es/"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
               <LinkedIn className="w-6 h-6 text-smooth-gray hover:text-white transition-colors" />
             </a>
           </div>
