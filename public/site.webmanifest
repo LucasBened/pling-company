@@ -1,0 +1,47 @@
+{
+  "name": "Pling Company - Agência de Tráfego Pago",
+  "short_name": "Pling Company",
+  "description": "Agência líder em tráfego pago e marketing digital. Transformamos cliques em clientes com campanhas de alto ROI.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#C0E6C4",
+  "orientation": "portrait-primary",
+  "lang": "pt-BR",
+  "categories": ["business", "marketing", "advertising"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Solicitar Orçamento",
+      "short_name": "Orçamento",
+      "description": "Solicite um orçamento personalizado",
+      "url": "/#contato",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Nossos Serviços",
+      "short_name": "Serviços",
+      "description": "Conheça nossos serviços de tráfego pago",
+      "url": "/#servicos",
+      "icons": [{ "src": "/favicon-96x96.png", "sizes": "96x96" }]
+    }
+  ]
+}
