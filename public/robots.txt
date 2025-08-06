@@ -1,3 +1,24 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Específico para bots importantes
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap
 Sitemap: https://plingcompany.com.br/sitemap.xml
+
+# Host (canonical)
+Host: https://plingcompany.com.br

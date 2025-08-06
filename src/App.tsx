@@ -13,7 +13,7 @@ import {
   Telescope,
 } from "lucide-react";
 import { motion } from "framer-motion";
-import Header from "./components/svg/Header";
+import Header from "./components/Header";
 import Bean from "./components/Bean";
 import { Button } from "./components/ui/button";
 import Google from "./components/svg/Google";
@@ -283,8 +283,10 @@ export default function App() {
 
               <img
                 src={notification_image}
-                alt="Ilustração de notificação animada representando conversão de leads e resultados em tráfego pago."
+                alt="Dashboard de conversões em tempo real mostrando leads qualificados e ROI positivo em campanhas de tráfego pago da Pling Company"
                 className="max-w-full h-auto w-11/12 sm:w-5/6 md:w-4/5 lg:w-full mx-auto"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
           </motion.div>

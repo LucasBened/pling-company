@@ -1,31 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Página principal -->
   <url>
     <loc>https://plingcompany.com.br/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://plingcompany.com.br/og-image-social.png</image:loc>
+      <image:title>Pling Company - Agência de Tráfego Pago</image:title>
+      <image:caption>Agência especializada em tráfego pago e marketing digital</image:caption>
+    </image:image>
   </url>
+  
+  <!-- Seções principais da landing page -->
   <url>
     <loc>https://plingcompany.com.br/#servicos</loc>
-    <priority>0.8</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+  
   <url>
     <loc>https://plingcompany.com.br/#para-quem</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://plingcompany.com.br/#plataformas</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
+  
   <url>
     <loc>https://plingcompany.com.br/#resultados</loc>
-    <priority>0.7</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
+  
   <url>
     <loc>https://plingcompany.com.br/#estudo-de-caso</loc>
-    <priority>0.6</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
+  
   <url>
     <loc>https://plingcompany.com.br/#contato</loc>
-    <priority>0.6</priority>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
+  
+  <!-- Páginas/seções específicas de serviços -->
+  <url>
+    <loc>https://plingcompany.com.br/trafego-pago</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://plingcompany.com.br/google-ads</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  
+  <url>
+    <loc>https://plingcompany.com.br/meta-ads</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  
+  <url>
+    <loc>https://plingcompany.com.br/consultoria-roi</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
 </urlset>
